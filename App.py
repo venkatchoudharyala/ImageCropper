@@ -2,6 +2,15 @@ import streamlit as st
 from streamlit_cropper import st_cropper
 from PIL import Image
 
+hide_st_style = """
+                <style>
+                header {visibility: hidden;}
+                footer {visibility: hidden;}
+                </style>
+                """
+
+st.markdown(hide_st_style, unsafe_allow_html = True)
+
 st.header("Cropper Demo")
 img_file = st.file_uploader(label='Upload a file', type=['png', 'jpg'])
 
