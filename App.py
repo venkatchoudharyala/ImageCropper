@@ -19,5 +19,5 @@ if img_file:
     cropped_img = st_cropper(img, realtime_update = True, box_color = "#FF0012", aspect_ratio = (5, 2))
 
     st.write("Preview")
-    #_ = cropped_img.thumbnail((600, 600))
+    _ = cropped_img.thumbnail((600, 600))
     st.image(cropped_img)
